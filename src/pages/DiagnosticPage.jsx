@@ -415,25 +415,25 @@ function DiagnosticPage() {
 
             <div className="options">
               {question.options.map((option) => (
-                <label 
+                <div 
                   key={option.value} 
                   className={`option ${isSelected(option.value) ? 'selected' : ''}`}
                   onClick={() => handleSelect(option.value)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      handleSelect(option.value)
+                    }
+                  }}
                 >
-                  <input 
-                    type={question.type === 'multiple' ? 'checkbox' : 'radio'} 
-                    name={question.id}
-                    value={option.value}
-                    checked={isSelected(option.value)}
-                    onChange={() => {}}
-                  />
                   {question.type === 'multiple' ? (
                     <span className="option-checkbox" />
                   ) : (
                     <span className="option-radio" />
                   )}
                   <span className="option-text">{option.label}</span>
-                </label>
+                </div>
               ))}
             </div>
 
