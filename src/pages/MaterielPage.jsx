@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 
 function MaterielPage() {
-  // TODO: Remplacer ces URLs par vos vrais liens d'affiliation Amazon
+  // TODO: Remplacer ces URLs par vos vrais liens d'affiliation (Amazon, LDLC, Materiel.net, etc.)
   const affiliateLinks = {
-    nas_synology: 'https://www.amazon.fr/dp/B0BN6W8VBV?tag=VOTRE-TAG-21',
-    nas_synology_alt: 'https://www.amazon.fr/dp/B0B4D3F83T?tag=VOTRE-TAG-21',
-    disque_wd_red: 'https://www.amazon.fr/dp/B09MJT6YTJ?tag=VOTRE-TAG-21',
-    disque_seagate: 'https://www.amazon.fr/dp/B084ZV1DN8?tag=VOTRE-TAG-21',
-    backup_wd: 'https://www.amazon.fr/dp/B07VS8QCXC?tag=VOTRE-TAG-21',
+    nas_synology: '#', // Remplacer par votre lien affilié
+    nas_synology_alt: '#', // Remplacer par votre lien affilié
+    disque_wd_red: '#', // Remplacer par votre lien affilié
+    disque_seagate: '#', // Remplacer par votre lien affilié
+    backup_wd: '#', // Remplacer par votre lien affilié
   }
 
   return (
@@ -23,8 +23,9 @@ function MaterielPage() {
         <div className="container" style={{ maxWidth: '900px' }}>
           <div className="info-box info-box-info">
             <p style={{ marginBottom: 0 }}>
-              <strong>Transparence :</strong> Les liens ci-dessous sont des liens affiliés Amazon. 
-              En achetant via ces liens, vous nous soutenez sans payer plus cher.
+              <strong>Transparence :</strong> Ce site utilise des liens affiliés. 
+              En achetant via ces liens, vous nous soutenez sans payer plus cher. 
+              Nous recommandons uniquement des produits adaptés aux cabinets comptables.
             </p>
           </div>
 
@@ -62,7 +63,7 @@ function MaterielPage() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>~650-750 €</span>
               <a href={affiliateLinks.nas_synology} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
-                Voir sur Amazon →
+                Voir le produit →
               </a>
             </div>
           </div>
@@ -78,7 +79,7 @@ function MaterielPage() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: 'var(--gray-600)' }}>~550-650 €</span>
               <a href={affiliateLinks.nas_synology_alt} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                Voir sur Amazon →
+                Voir le produit →
               </a>
             </div>
           </div>
@@ -112,7 +113,7 @@ function MaterielPage() {
               <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>~180 € / disque</span>
               <span style={{ color: 'var(--gray-500)' }}>(~720 € pour 4)</span>
               <a href={affiliateLinks.disque_wd_red} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
-                Voir sur Amazon →
+                Voir le produit →
               </a>
             </div>
           </div>
@@ -128,7 +129,7 @@ function MaterielPage() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: 'var(--gray-600)' }}>~170 € / disque</span>
               <a href={affiliateLinks.disque_seagate} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                Voir sur Amazon →
+                Voir le produit →
               </a>
             </div>
           </div>
@@ -169,7 +170,7 @@ function MaterielPage() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>~150-200 €</span>
               <a href={affiliateLinks.backup_wd} target="_blank" rel="noopener noreferrer" className="btn btn-accent">
-                Voir sur Amazon →
+                Voir le produit →
               </a>
             </div>
           </div>
@@ -217,9 +218,8 @@ function MaterielPage() {
 
           <div className="info-box info-box-success" style={{ marginTop: '1.5rem' }}>
             <p style={{ marginBottom: 0 }}>
-              <strong>Note :</strong> Les prix Amazon varient régulièrement. 
-              Cette estimation est basée sur les prix moyens constatés. 
-              Guettez les promotions, notamment lors du Prime Day et du Black Friday.
+              <strong>Note :</strong> Les prix varient selon les revendeurs. 
+              Comparez les offres et guettez les promotions pour faire des économies.
             </p>
           </div>
         </div>
